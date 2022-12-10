@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'goonies';
+    font-display: swap;
+    src: url(/font/Goonies.ttf);
+}
+
+@font-face {
+    font-family: 'damion';
+    font-display: swap;
+    src: url(/font/Damion.ttf);
+}
+
+html {
+    background: #000000;
+}
+
+body {
+    overflow-y: hidden;
+    box-sizing: border-box;
+    font-family: 'YuMincho', Arial, 'Noto Sans JP', sans-serif;
+}
+
+
+/* base font */
+
+.text {
+    font-family: 'YuMincho';
+}
+
+
+/* desc font */
+
+.intro_author {
+    font-family: damion;
+}
+
+
+/* intro font */
+
+.intro_text {
+    font-family: goonies;
+}
+
+
+/* desktop intro 3D */
+
+.track-on-window {
+    transform-style: preserve-3d;
+}
+
+
+/* section title */
+
+.section_title {
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* scroll down */
+
+.mousey {
+    width: 4px;
+    padding: 7px 10px;
+    height: 30px;
+    border: 1.5px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 4px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+
+/* function */
+
+.function_mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.function_box_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+.function_box_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+
+/* smoke */
+
+
+/* .vapor span {
+    display: block;
+    min-width: 10px;
+    height: 55px;
+    border-radius: 100%;
+    animation: animate 2s linear infinite;
+    filter: blur(7px);
+    animation-delay: calc(var(--i) * -0.5s);
+    z-index: 10;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scale(0.3);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-60px) scale(3);
+        opacity: 1;
+    }
+    95% {
+        transform: translateY(-100px) scale(5);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(-110px) scale(8);
+        opacity: 0;
+    }
+} */
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: white;
+        background: black;
+    }
+}

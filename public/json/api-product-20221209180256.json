@@ -1,0 +1,20 @@
+{
+    "apiFields": [{
+            "idValue": "t_H6XpIybk",
+            "fieldId": "title",
+            "name": "タイトル",
+            "kind": "text",
+            "required": true,
+            "isUnique": false
+        },
+        { "fieldId": "body", "name": "本文", "kind": "richEditor" },
+        {
+            "fieldId": "thumbnail",
+            "name": "画像",
+            "kind": "media",
+            "imageSizeValidation": { "imageSize": { "width": 300, "height": 240 } }
+        },
+        { "fieldId": "description", "name": "概要", "kind": "textArea" }
+    ],
+    "customFields": []
+}

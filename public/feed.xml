@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Sat, 10 Sep 2022 16:29:27 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <image>
+            <title></title>
+            <url>undefinedicon-192.png</url>
+            <link>undefined</link>
+        </image>
+        <copyright>2022 undefined</copyright>
+        <item>
+            <title><![CDATA[Vintage Microphone Shop !!]]></title>
+            <link>undefined20220910/ef1r9al91</link>
+            <guid>undefined20220910/ef1r9al91</guid>
+            <pubDate>Fri, 09 Sep 2022 18:19:03 GMT</pubDate>
+            <description><![CDATA[Next.js + Stripe の簡易的なショッピングデモアプリです。]]></description>
+            <content:encoded><![CDATA[<p>内容</p>]]></content:encoded>
+            <category>Fullstack</category>
+            <enclosure url="https://images.microcms-assets.io/assets/3d1f5a27554b4c1d9438e6c83e6502da/b987b68f458a432aa8fd48983b70bae2/vintage_microphone.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Retro Gear]]></title>
+            <link>undefined20220910/4o1fn2e91w</link>
+            <guid>undefined20220910/4o1fn2e91w</guid>
+            <pubDate>Fri, 09 Sep 2022 18:09:14 GMT</pubDate>
+            <description><![CDATA[フルスタックのショッピングデモアプリです。]]></description>
+            <content:encoded><![CDATA[<p>内容です。</p>]]></content:encoded>
+            <category>Fullstack</category>
+            <enclosure url="https://images.microcms-assets.io/assets/3d1f5a27554b4c1d9438e6c83e6502da/9d48c15e16574c5bbca9f4b59c463aaf/retro_gear.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Markdown]]></title>
+            <link>undefined20220910/nib__fu-ryl</link>
+            <guid>undefined20220910/nib__fu-ryl</guid>
+            <pubDate>Fri, 09 Sep 2022 18:05:41 GMT</pubDate>
+            <description><![CDATA[Next.js  Typescript のシンプルなMarkdownブログのテストです。]]></description>
+            <content:encoded><![CDATA[<p>内容</p>]]></content:encoded>
+            <category>Frontend</category>
+            <enclosure url="https://images.microcms-assets.io/assets/3d1f5a27554b4c1d9438e6c83e6502da/8c83cd3c6640443fb2ef11fb644fb2c7/markdown.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[MurMur]]></title>
+            <link>undefined20220910/ur4-e37wx</link>
+            <guid>undefined20220910/ur4-e37wx</guid>
+            <pubDate>Fri, 09 Sep 2022 17:33:14 GMT</pubDate>
+            <description><![CDATA[ユーザー認証付きのSNSアプリです。]]></description>
+            <content:encoded><![CDATA[<p>MurMurの本文です。</p>]]></content:encoded>
+            <category>Fullstack</category>
+            <enclosure url="https://images.microcms-assets.io/assets/3d1f5a27554b4c1d9438e6c83e6502da/4dfe5d0c5df74d91bd08c359e0d9f602/murmur.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Next.js Matter.js]]></title>
+            <link>undefined20220910/sw0fyy829-32</link>
+            <guid>undefined20220910/sw0fyy829-32</guid>
+            <pubDate>Fri, 09 Sep 2022 17:31:13 GMT</pubDate>
+            <description><![CDATA[Next.js Matter.js の説明文です]]></description>
+            <content:encoded><![CDATA[<p>内容です。<br>・<br>・<br>・<br>・<br>・</p>]]></content:encoded>
+            <category>Frontend</category>
+            <enclosure url="https://images.microcms-assets.io/assets/3d1f5a27554b4c1d9438e6c83e6502da/312097b3a9a646da9effa4d70e745455/nextjs_matter.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>
