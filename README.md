@@ -1,35 +1,117 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portofolio!　:guitar:
 
-## Getting Started
+## デモ
 
-First, run the development server:
+<!-- ![demo](https://media.giphy.com/media/vRN7Fy0ZWNPmlHMUoc/giphy.gif) -->
 
-```bash
-npm run dev
-# or
-yarn dev
+## 概要　:speech_balloon:
+
+自身のポートフォリオとして制作しました。
+フロントは Next.js（Typescript）＋ ChakraUiI で Vercel へデプロイしました。
+ユーザー認証、カート機能、検索機能、出品システムを備えています。
+主な機能は、
+_ SG (ISR)で静的生成
+_ Atomic Design (Storybook)
+_ MicroCMS で制作品やブログ記事を管理
+_ パララックスアニメーション
+_ Three.js による 3D イメージ実装
+_ Stripe による決済（投げ銭）機能
+
+## 環境　:ocean:
+
+- Node.js: 16.14.0
+- Next.js: 12.2.3
+- React: 18.2.0
+
+## ディレクトリ構成　:books:
+
+```
+├── .env <-- 環境変数
+├── .env.production <-- 本番用環境変数
+├── .eslintrc.json <-- ESLint設定ファイル
+├── .prettierrc
+├── compose.yml
+├── Dockerfile
+├── next-sitemap.js
+├── README.md
+├── jest.config.js <-- Jestの設定ファイル
+├── jest.setup.js <-- テストファイルが実行される前に走る
+├── next-env.d.ts
+├── next.config.js <-- Next.js設定ファイル
+├── yarn.lock
+├── package.json
+├── public
+├── src
+│   ├── components <-- Presentational Components
+│   ├── hooks
+│   ├── contexts <-- React Context
+│   ├── pages <-- Next.jsのページ
+│   ├── libs <-- API Client
+│   ├── themes <-- styled-componentsのテーマ
+│   ├── types <-- 型定義
+│   └── utils <-- 汎用関数
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## インストール　:feet:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 使用方法　:paperclip:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+git clone https://github.com/Kuro32183/my-portfolio.git
+cd examples
 
-## Learn More
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 開発サーバー起動 :computer:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+開発サーバーの起動し、http://localhost:3000/ にアクセス
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+## Storybook 起動　:book:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Storybook を起動し、http://localhost:6006/ にアクセス
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# my-portfolio
+```
+npm run storybook
+```
+
+## テスト実行　:eyes:
+
+ユニットテスト実行
+
+```
+npm run test
+```
+
+## ソースコードリンター・フォーマッター　:shower:
+
+ソースコードをリンターでチェック
+
+```
+npm run lint
+```
+
+ソースコードをフォーマッターで整形
+
+```
+npm run format
+```
+
+## Author 　:sunglasses:
+
+- Kuro32183
+- takumi32183@gmail.com
+
+## License 　:email:
+
+"My Portofolio!" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+
+"My Portofolio!" is Confidential.
