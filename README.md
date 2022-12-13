@@ -8,14 +8,14 @@
 
 自身のポートフォリオとして制作しました。
 フロントは Next.js（Typescript）＋ ChakraUiI で Vercel へデプロイしました。
-ユーザー認証、カート機能、検索機能、出品システムを備えています。
-主な機能は、
-_ SG (ISR)で静的生成
-_ Atomic Design (Storybook)
-_ MicroCMS で制作品やブログ記事を管理
-_ パララックスアニメーション
-_ Three.js による 3D イメージ実装
-_ Stripe による決済（投げ銭）機能
+主な機能は
+
+- SG (ISR)で静的生成
+- Atomic Design (Storybook)
+- MicroCMS で制作品やブログ記事を管理
+- パララックスアニメーション
+- Three.js による 3D イメージ実装
+- Stripe による決済（投げ銭）機能
 
 ## 環境　:ocean:
 
