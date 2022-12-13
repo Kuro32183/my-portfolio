@@ -9,7 +9,7 @@ const LoadingText: FC = () => {
         'Loading My Portfolio...',
         () => {
           //return fetch("https://test.com"), will be awaited
-          return new Promise((resolve) => setTimeout(resolve, 2000))
+          return new Promise((resolve) => setTimeout(resolve, 1000))
         },
         'successfully!',
       ]}

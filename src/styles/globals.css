@@ -1,3 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 @font-face {
     font-family: 'goonies';
     font-display: swap;
@@ -10,6 +13,12 @@
     src: url(/font/Damion.ttf);
 }
 
+@font-face {
+    font-family: 'nijimi';
+    font-display: swap;
+    src: url(/font/Nijimi.otf);
+}
+
 html {
     background: #000000;
 }
@@ -17,7 +26,26 @@ html {
 body {
     overflow-y: hidden;
     box-sizing: border-box;
-    font-family: 'YuMincho', Arial, 'Noto Sans JP', sans-serif;
+    font-family: 'nijimi', sans-serif;
+    letter-spacing: 1.2px;
+}
+
+.loadingNone {
+    animation: loadingAnime 2s forwards;
+    display: none;
+}
+
+@keyframes loadingAnime {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }
 
 
@@ -46,15 +74,6 @@ body {
 
 .track-on-window {
     transform-style: preserve-3d;
-}
-
-
-/* section title */
-
-.section_title {
-    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
 }
 
 

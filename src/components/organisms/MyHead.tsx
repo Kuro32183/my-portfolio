@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-undef */
+
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
@@ -7,6 +8,31 @@ interface MyHeadProps {
   title?: string
   thumbnailUrl?: string
   description?: string
+}
+
+interface JsonLdProps {
+  title?: string
+  updated?: string
+  url?: string
+  imageUrl: string
+  description: string
+}
+
+function jsonLd(props: JsonLdProps) {
+  const { title, updated, url, imageUrl, description } = props
+  const jsonLd = {
+    '@context': 'http://schema.org',
+    '@type': 'Article',
+    name: title,
+    headline: title,
+    datePublished: '2020-04-27T00:00:00.000Z',
+    dateModified: updated,
+    url: url,
+    mainEntityOfPage: url,
+    image: [imageUrl],
+    description: description,
+  }
+  return JSON.stringify(jsonLd)
 }
 
 const MyHead: NextPage<MyHeadProps> = ({
@@ -66,11 +92,23 @@ const MyHead: NextPage<MyHeadProps> = ({
         href="https://my-portfolio-kuro32183.vercel.app/"
       ></link>
 
-      <link rel="prefetch" />
+      {/* <link rel="prefetch" />
       <link rel="prerender" />
       <link rel="subresource" />
       <link rel="preload" />
-      <link rel="dns-prefetch" />
+      <link rel="dns-prefetch" /> */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLd({
+            title: 'title',
+            description: 'description',
+            imageUrl: 'image url',
+            url: 'url',
+            updated: new Date().toISOString(),
+          }),
+        }}
+      />
     </Head>
   )
 }

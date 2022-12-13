@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react'
 
 import { Box, Flex, Grid, GridItem } from '@chakra-ui/react'
 
-import Footer from '~/components/organisms/Footer'
 import LeftSideBar from '~/components/organisms/LeftSideBar'
 import RightSideBar from '~/components/organisms/RightSideBar'
 import MyHead from '~/components/organisms/MyHead'
@@ -25,7 +24,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
             </GridItem>
           </Flex>
         </Box>
-        <Footer />
       </Grid>
     </>
   )

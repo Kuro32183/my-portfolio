@@ -11,15 +11,14 @@ const Footer: FC = () => {
     <Box
       borderTop="2px solid #ffffff"
       padding="2rem 2.5rem"
-      bg="#000000"
+      bg="transparent"
       color="white"
       position="relative"
-      fontFamily="monospace"
     >
       <Box zIndex="10">
         <FooterLinks />
       </Box>
-      <Flex justifyContent="space-between" pt={4}>
+      <Flex justifyContent="space-between" fontFamily="damion" pt={4}>
         <Spacer />
         <Link
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

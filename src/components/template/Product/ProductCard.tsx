@@ -26,6 +26,7 @@ const ProductCard = (props: { product: Product }) => {
       cursor="pointer"
       position="relative"
       m="10px auto"
+      fontFamily="nijimi"
     >
       <Link
         href={`/products/${product.id}`} //prefetch
@@ -66,7 +67,7 @@ const ProductCard = (props: { product: Product }) => {
             <motion.div
               style={{
                 overflow: 'hidden',
-                padding: '1rem',
+                padding: '0.5rem',
                 zIndex: '15',
                 background: 'RGBA(0, 0, 0, 0.68)',
                 borderRadius: '5px',

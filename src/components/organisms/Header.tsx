@@ -59,8 +59,9 @@ const Header: FC = () => {
       // borderBottom="1px solid #ffffff"
       color="white"
       bg="#000000"
+      fontFamily="monospace"
     >
-      <Heading textAlign="center" fontWeight="bold">
+      <Heading textAlign="center" fontWeight="400">
         <Flex justifyContent="space-between" px={{ base: 4, md: 8, lg: 16 }}>
           <Link href="/">
             <a>

@@ -13,7 +13,7 @@ export const DesktopBox = chakra(motion.div, {
   },
 })
 
-export const LoadingBox = chakra(motion.div, {
+export const LoadingImageBox = chakra(motion.img, {
   shouldForwardProp: (prop) => {
     return shouldForwardProp(prop) || prop === 'transition'
   },

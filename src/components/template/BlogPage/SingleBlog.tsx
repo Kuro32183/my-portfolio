@@ -47,6 +47,7 @@ const SingleBlog: FC<Props> = ({ data }) => {
         </Flex>
         <Spacer pt={2} />
         <Box
+          fontFamily="nijimi"
           as="div"
           dangerouslySetInnerHTML={{
             __html: body || '',

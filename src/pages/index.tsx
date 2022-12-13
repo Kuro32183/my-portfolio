@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable import/named */
-import React from 'react'
+import React, { useRef } from 'react'
 
 import { SimpleGrid, Box, UnorderedList, Spacer } from '@chakra-ui/react'
 import type {
@@ -14,11 +14,6 @@ import { useScroll, useTransform } from 'framer-motion'
 // eslint-disable-next-line import/order
 import dynamic from 'next/dynamic'
 import LazyLoad from 'react-dom-lazyload-component'
-
-// Layout
-const Layout = dynamic(() => import('~/components/template/Layout'), {
-  ssr: false,
-})
 
 // Introduction
 const SmIntro = dynamic(
@@ -55,7 +50,7 @@ const LgIntro = dynamic(
 )
 
 // About
-const About = React.lazy(() => import('~/components/template/About'))
+// const About = React.lazy(() => import('~/components/template/About'))
 
 // Function
 const HomeFunctionsMobile = dynamic(
@@ -82,45 +77,20 @@ const FunctionsDesktop = dynamic(
 // Blog
 const Blogs = React.lazy(() => import('~/components/template/Blog/Blogs'))
 
-// SectionTitle
-const SectionTitle = dynamic(
-  () => import('~/components/molecules/SectionTitle'),
-  { ssr: false }
-)
-
-// HiddenTitle
-const HiddenTitle = dynamic(() => import('~/components/atoms/HiddenTitle'), {
-  ssr: false,
-})
-
-//NightScene
-const NightScene = React.lazy(
-  () => import('~/components/organisms/NightScene/NightScene')
-)
-
 //NightScene
 const ProductCard = React.lazy(
   () => import('~/components/template/Product/ProductCard')
 )
 
-// import { PageConfig } from 'next'
-
 import { fetchBlogs, fetchProducts } from 'libs/fetchApi'
 import { DesktopBox, MobileBox } from '~/libs/chakraBox'
-import MyHead from '~/components/organisms/MyHead'
-// import ProductCard from '~/components/template/Product/ProductCard'
-// import Layout from '~/components/template/Layout'
-// import HiddenTitle from '~/components/atoms/HiddenTitle'
-// import NightScene from '~/components/organisms/NightScene/NightScene'
-// import SectionTitle from '~/components/molecules/SectionTitle'
-// import Blogs from '~/components/template/Blog/Blogs'
-// import About from '~/components/template/About'
-// import { HomeFunctionsMobile } from '~/components/template/FunctionsMobile'
-// import { FunctionsDesktop } from '~/components/template/FunctionsDesktop'
-
-// export const config: PageConfig = {
-//   unstable_runtimeJS: false,
-// }
+import Layout from '~/components/template/Layout'
+import About from '~/components/template/About'
+import HiddenTitle from '~/components/atoms/HiddenTitle'
+import NightScene from '~/components/organisms/NightScene/NightScene'
+import SectionTitle from '~/components/molecules/SectionTitle'
+import Loading from '~/components/organisms/Loading'
+import Footer from '~/components/organisms/Footer'
 
 type PageProps = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -153,12 +123,21 @@ const Home: NextPage<PageProps> = (props) => {
 
   return (
     <>
-      <MyHead />
       <Layout>
         <Box as="div">
-          <Box as="div" h="100vh" w="100vw" bg="#000000" zIndex="-1"></Box>
+          <Loading />
+          <Box
+            id="intro"
+            as="div"
+            h="100vh"
+            w="100vw"
+            bg="#000000"
+            zIndex="-1"
+            display={{ lg: 'none' }}
+          />
           {/* Introduction */}
-          <Box id="intro" as="div" bg="#000000" zIndex="-1">
+
+          <Box as="div" bg="#000000" zIndex="-1">
             <HiddenTitle title={'イントロダクション'} />
             <Box as="div" display={{ base: 'block', md: 'none' }}>
               <SmIntro />
@@ -170,22 +149,21 @@ const Home: NextPage<PageProps> = (props) => {
               <LgIntro />
             </Box>
           </Box>
+
           <Box as="div" position="relative" zIndex="40" h="100%" bg="#000000">
             {/* NightScene */}
 
             <Box as="div">
               <HiddenTitle title={'ナイトシーン'} />
-              <LazyLoad suspence as="div">
-                <NightScene />
-              </LazyLoad>
+              <NightScene />
             </Box>
 
             {/* About */}
-            <Box id="about" as="div" h={{ base: '130vh' }} pt="4rem">
+            <Box id="about" as="div" h={{ base: '100vh' }} pt="4rem">
               <HiddenTitle title={'著書について'} />
-              <LazyLoad suspence>
-                <About />
-              </LazyLoad>
+              {/* <LazyLoad> */}
+              <About />
+              {/* </LazyLoad> */}
             </Box>
             <Spacer h="20vh"></Spacer>
 
@@ -218,7 +196,7 @@ const Home: NextPage<PageProps> = (props) => {
                 src={`/title/wrench.svg`}
                 alt={'products'}
               />
-              <LazyLoad suspence>
+              <LazyLoad>
                 <SimpleGrid
                   columns={{ base: 1, sm: 1, md: 2, lg: 3 }}
                   gap={{ base: 6, md: 4, lg: 4 }}
@@ -247,7 +225,7 @@ const Home: NextPage<PageProps> = (props) => {
                 src={'/title/pencil.svg'}
                 alt={'blog'}
               />
-              <LazyLoad suspence>
+              <LazyLoad>
                 <UnorderedList
                   list-style="none"
                   display={{ base: 'inline-block', lg: 'flex' }}
@@ -260,6 +238,7 @@ const Home: NextPage<PageProps> = (props) => {
                 </UnorderedList>
               </LazyLoad>
             </Box>
+            <Footer />
           </Box>
         </Box>
       </Layout>

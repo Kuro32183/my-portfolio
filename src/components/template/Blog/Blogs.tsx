@@ -26,6 +26,7 @@ const Blogs = (props: { blog: Blog }) => {
       mr={{ base: '0' }}
       key={blog.id}
       role="listitem"
+      fontFamily="nijimi"
     >
       <Link
         href={`/blog/${blog.private ? 'private' : 'public'}/${blog.id}`} //prefetch
@@ -38,6 +39,7 @@ const Blogs = (props: { blog: Blog }) => {
               fontSize={{ base: '0.9rem', md: '1.1rem' }}
               pr="3"
               letterSpacing="2px"
+              fontFamily="nijimi"
             >
               {blog.title}
             </Heading>
@@ -63,7 +65,7 @@ const Blogs = (props: { blog: Blog }) => {
 
           <Spacer />
           <Text
-            fontSize={{ base: '0.7rem' }}
+            fontSize={{ base: '0.7rem', md: '0.8rem' }}
             py={2}
             noOfLines={3}
             lineHeight="6"

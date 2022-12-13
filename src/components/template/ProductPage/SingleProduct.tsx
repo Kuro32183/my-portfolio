@@ -60,6 +60,7 @@ const SingleProduct: FC<Props> = ({ data }) => {
         <Spacer pt={8} />
         <Box
           as="div"
+          fontFamily="nijimi"
           dangerouslySetInnerHTML={{
             __html: body || '',
           }}

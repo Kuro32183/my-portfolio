@@ -19,17 +19,7 @@ export function LgIntroHide() {
 
 export function LgIntro() {
   return (
-    <LgBox
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      // @ts-ignore no problem in operation, although type error appears.
-      transition={{ duration: 0.5 }}
-      position="relative"
-      h="140vh"
-      w="100%"
-      bg="#000000"
-      zIndex="5"
-    >
+    <LgBox position="relative" h="140vh" w="100%" bg="#000000" zIndex="5">
       <Image
         position="absolute"
         w="full"
@@ -86,7 +76,7 @@ export function LgIntro() {
         <Image
           position="absolute"
           minWidth="110%"
-          left="-7%"
+          left="-5%"
           srcSet="/intro/lg/base.webp"
           src="/intro/lg/base.png"
           alt="base"
@@ -95,7 +85,7 @@ export function LgIntro() {
         <Box
           position="absolute"
           minWidth="110%"
-          left="-7%"
+          left="-5%"
           transform="translateZ(1px)"
         >
           <LFlower
@@ -110,6 +100,7 @@ export function LgIntro() {
         <Image
           position="absolute"
           left="3%"
+          top="-4%"
           maxWidth="120%"
           srcSet="/intro/lg/tree_bottom.webp"
           src="/intro/lg/tree_bottom.png"

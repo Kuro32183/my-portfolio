@@ -19,7 +19,7 @@ export function IntroText() {
         // @ts-ignore no problem in operation, although type error appears.
         transition={{
           duration: 0.8,
-          // delay: 0.5,
+          delay: 3,
           type: 'spring',
           stiffness: 200,
         }}

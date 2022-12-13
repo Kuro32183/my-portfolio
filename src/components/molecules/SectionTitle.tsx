@@ -40,9 +40,16 @@ const SectionTitle: FC<ChakraProps> = (props) => {
         loading="lazy"
         decoding="async"
         display="inline"
+        pr={2}
       />
-      <Text as="h2" fontSize="2rem" className="section_title">
-        &nbsp;{props.title}
+      <Text
+        as="h2"
+        fontSize="1.8rem"
+        fontWeight="300"
+        letterSpacing="2px"
+        fontFamily="nijimi"
+      >
+        {props.title}
       </Text>
     </ChakraBox>
   )

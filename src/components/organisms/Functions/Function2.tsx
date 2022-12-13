@@ -13,8 +13,7 @@ export default function Function2() {
         color={{ base: 'white', lg: 'gray' }}
       />
       <Text as="p" mt={2} size="base" color={{ base: 'white', lg: 'gray' }}>
-        ワイヤーフレーム、試作品はFigmaで制作しました。
-        デザイン制作期間は２週間です。
+        ワイヤーフレーム、試作品はFigmaで制作しました。デザイン制作期間は２週間です。
       </Text>
       <Text as="p" mt={2} size="base" color={{ base: 'white', lg: 'gray' }}>
         主なページはTop、制作品、ブログ記事の3Pになります。

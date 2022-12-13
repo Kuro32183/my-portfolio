@@ -112,3 +112,18 @@
         transform: translateY(0vh) translateX(110vw) scale(0.45);
     }
 }
+
+.loader-container {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    z-index: 999;
+    background-color: #000000;
+    .counter-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 30vw;
+        min-height: 30vw;
+    }
+}

@@ -226,7 +226,7 @@ const Component4 = () => {
 
 export function HomeFunctionsMobile() {
   return (
-    <Box>
+    <Box fontFamily="nijimi">
       <Component1 />
       <TextSpacer />
       <Component2 />

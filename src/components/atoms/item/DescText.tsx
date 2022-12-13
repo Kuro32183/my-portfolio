@@ -68,10 +68,10 @@ export function DescTextMobile() {
           color="white"
           textAlign="center"
           style={{ overflowWrap: 'break-word' }}
+          fontFamily="nijimi"
         >
           <Text
             fontSize={{ base: '1.3rem', md: '1.7rem' }}
-            fontFamily="monospace"
             fontWeight="600"
             textAlign="center"
             letterSpacing="1.5px"
@@ -80,10 +80,7 @@ export function DescTextMobile() {
             Hi, I'm Kuro32183 !
           </Text>
           <Plx parallaxData={parallaxDesc}>
-            <Text
-              fontFamily="monospace"
-              fontSize={{ base: '1rem', md: '1.3rem' }}
-            >
+            <Text fontSize={{ base: '1rem', md: '1.2rem' }} lineHeight="2rem">
               I love designing websites and branding for client. This website is
               developed as a portfolio. Please scroll down for more about me,
               technical explanations about this website, other products and
