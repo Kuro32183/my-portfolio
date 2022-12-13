@@ -2,6 +2,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    scrollRestoration: true,
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -14,29 +17,28 @@ const nextConfig = {
     domains: ['images.microcms-assets.io'],
     disableStaticImages: true,
   },
-  reactStrictMode: true,
-  poweredByHeader: false,
-  async headers() {
-    return [
-      {
-        source: '/(.*?)',
-        headers: [
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
-          },
-        ],
-      },
-    ]
-  },
+  // poweredByHeader: false,
+  // async headers() {
+  //   return [
+  //     {
+  //       source: '/(.*?)',
+  //       headers: [
+  //         {
+  //           key: 'X-Content-Type-Options',
+  //           value: 'nosniff',
+  //         },
+  //         {
+  //           key: 'X-Frame-Options',
+  //           value: 'DENY',
+  //         },
+  //         {
+  //           key: 'X-XSS-Protection',
+  //           value: '1; mode=block',
+  //         },
+  //       ],
+  //     },
+  //   ]
+  // },
 }
 module.exports = nextConfig
 
@@ -50,12 +52,12 @@ module.exports = withBundleAnalyzer({
 
 // chunks
 module.exports = {
-  experimental: {
-    granularChunks: true,
-    //
-    browsersListForSwc: true,
-    legacyBrowsers: false,
-  },
+  // experimental: {
+  //   granularChunks: true,
+  //   //
+  //   browsersListForSwc: true,
+  //   legacyBrowsers: false,
+  // },
   productionBrowserSourceMaps: true,
   images: {
     loader: 'custom',
