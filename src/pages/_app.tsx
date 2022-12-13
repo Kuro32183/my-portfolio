@@ -2,49 +2,20 @@
 /* eslint-disable no-unused-vars */
 import 'styles/globals.css'
 import 'styles/main.scss'
-// import { useEffect, useState } from 'react'
+
 import { ChakraProvider } from '@chakra-ui/provider'
 import { AnimatePresence, AnimateSharedLayout } from 'framer-motion'
+// import { UseEffectScroll } from 'react-use-smooth-scroll'
+import 'react-use-smooth-scroll/dist/index.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 
-// import Loading from '~/components/organisms/Loading'
-
 import theme from 'libs/styles'
-// import { LoadingBox } from '~/libs/chakraBox'
 import MyHead from '~/components/organisms/MyHead'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
   console.log(router.pathname)
-
-  // const [isLoading, setIsLoading] = useState<boolean>(true)
-  // useEffect(() => {
-  //   setIsLoading(true)
-  //   setTimeout(() => {
-  //     setIsLoading(false)
-  //   }, 3000)
-  // }, [])
-  // if (isLoading) {
-  //   return (
-  //     <>
-  //       <MyHead />
-  //       <AnimatePresence
-  //         exitBeforeEnter
-  //         onExitComplete={() => window.scrollTo(0, 0)}
-  //       >
-  //         <LoadingBox
-  //           position="fixed"
-  //           top="50%"
-  //           left="50%"
-  //           transform="translate(-50%, -50%)"
-  //         >
-  //           <Loading />
-  //         </LoadingBox>
-  //       </AnimatePresence>
-  //     </>
-  //   )
-  // }
 
   return (
     <>
@@ -55,7 +26,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       >
         <AnimateSharedLayout>
           <ChakraProvider theme={theme}>
+            {/* <UseEffectScroll> */}
             <Component {...pageProps} />
+            {/* </UseEffectScroll> */}
           </ChakraProvider>
         </AnimateSharedLayout>
       </AnimatePresence>
