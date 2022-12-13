@@ -2,7 +2,7 @@
 
 ## デモ
 
-![demo](https://www.webmobilefirst.com/ja/screencasts/OwI7HlivtP/)
+![demo](https://media.giphy.com/media/hA8nxP2gfYJ4T1RfwC/giphy.gif)
 
 ## 概要　:speech_balloon:
 
