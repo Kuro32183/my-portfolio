@@ -2,7 +2,7 @@
 
 ## デモ
 
-<!-- ![demo](https://media.giphy.com/media/vRN7Fy0ZWNPmlHMUoc/giphy.gif) -->
+![demo](https://www.webmobilefirst.com/ja/screencasts/OwI7HlivtP/)
 
 ## 概要　:speech_balloon:
 
@@ -67,7 +67,7 @@ cd examples
 
 ```
 
-## 開発サーバー起動 :computer:
+## 開発サーバー起動　:computer:
 
 開発サーバーの起動し、http://localhost:3000/ にアクセス
 
