@@ -15,8 +15,8 @@ const CheckoutButton: FC = () => {
           fontWeight="semibold"
           letterSpacing="wide"
           textTransform="uppercase"
-          // bg="blue.400"
-          bg="green"
+          bg="blue.400"
+          // bg="green"
           color="#ffffff"
           _hover={{ bg: 'blue.200' }}
           transition="ease .2s"

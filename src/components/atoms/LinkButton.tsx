@@ -10,8 +10,8 @@ const LinkButton: FC<LinkButtonProps> = (props) => {
   return (
     <Button
       href={props.href}
-      // bg="blue.400"
-      bg="green"
+      bg="blue.400"
+      // bg="green"
       color="white"
       _hover={{ bg: 'blue.200' }}
       textDecoration="none"
