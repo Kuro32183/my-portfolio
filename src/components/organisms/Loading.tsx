@@ -77,8 +77,6 @@ export default function Loading() {
         left="0"
         right="0"
         bottom="0"
-        // inset="0"
-        // m="auto"
         zIndex="999"
         bg="#000000"
         id="loading"
