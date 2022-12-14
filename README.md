@@ -105,12 +105,12 @@ npm run lint
 npm run format
 ```
 
-## Author 　:sunglasses:
+## 著者　:sunglasses:
 
 - Kuro32183
 - takumi32183@gmail.com
 
-## License 　:email:
+## ライセンス　:email:
 
 "My Portofolio!" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
 
