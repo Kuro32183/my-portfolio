@@ -10,7 +10,7 @@
 フロントは Next.js（Typescript）＋ ChakraUiI で Vercel へデプロイしました。
 主な機能は
 
-- SG (ISR)で静的生成
+- SG (ISR)で静的サイト生成
 - Atomic Design (Storybook)
 - MicroCMS で制作品やブログ記事を管理
 - パララックスアニメーション
@@ -20,8 +20,8 @@
 ## 環境　:ocean:
 
 - Node.js: 16.14.0
-- Next.js: 12.2.3
-- React: 18.2.0
+- Next.js: ^12.3.0
+- React: ^16.4.0
 
 ## ディレクトリ構成　:books:
 
@@ -30,9 +30,9 @@
 ├── .env.production <-- 本番用環境変数
 ├── .eslintrc.json <-- ESLint設定ファイル
 ├── .prettierrc
-├── compose.yml
-├── Dockerfile
-├── next-sitemap.js
+├── compose.yml <-- Docker
+├── Dockerfile <-- Docker
+├── next-sitemap.js <-- サイトマップ生成
 ├── README.md
 ├── jest.config.js <-- Jestの設定ファイル
 ├── jest.setup.js <-- テストファイルが実行される前に走る
@@ -43,7 +43,7 @@
 ├── public
 ├── src
 │   ├── components <-- Presentational Components
-│   ├── hooks
+│   ├── hooks <-- React Hooks
 │   ├── contexts <-- React Context
 │   ├── pages <-- Next.jsのページ
 │   ├── libs <-- API Client
